@@ -1,0 +1,58 @@
+Path: news.free.fr!xref-2.proxad.net!spooler1c-1.proxad.net!cleanfeed4-a.proxad.net!nnrp4-2.free.fr!not-for-mail
+Newsgroups: fr.test
+X-Mozilla-News-Host: news://news.free.fr:119
+From: Julien Arlandis <julien.arlandis@laposte.net>
+Subject: Test N2JConnector
+Date: Wed, 11 Nov 2015 10:41:39 +0100
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:38.0)
+ Gecko/20100101 Thunderbird/38.3.0
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+Lines: 37
+Message-ID: <56430d53$0$3171$426a74cc@news.free.fr>
+Organization: Guest of ProXad - France
+NNTP-Posting-Date: 11 Nov 2015 10:41:39 CET
+NNTP-Posting-Host: 82.239.131.195
+X-Trace: 1447234899 news-1.free.fr 3171 82.239.131.195:53788
+X-Complaints-To: abuse@proxad.net
+Xref: news.free.fr fr.test:244057
+
+Nihil est enim virtute amabilius, nihil quod magis adliciat ad 
+diligendum, quippe cum propter virtutem et probitatem etiam eos, quos 
+numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. 
+Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam 
+viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. 
+Maelium non oderit? Cum duobus ducibus de imperio in Italia est 
+decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non 
+nimis alienos animos habemus, alterum propter crudelitatem semper haec 
+civitas oderit.
+
+Quam ob rem circumspecta cautela observatum est deinceps et cum edita 
+montium petere coeperint grassatores, loci iniquitati milites cedunt. 
+ubi autem in planitie potuerint reperiri, quod contingit adsidue, nec 
+exsertare lacertos nec crispare permissi tela, quae vehunt bina vel 
+terna, pecudum ritu inertium trucidantur.
+
+Vbi curarum abiectis ponderibus aliis tamquam nodum et codicem 
+difficillimum Caesarem convellere nisu valido cogitabat, eique 
+deliberanti cum proximis clandestinis conloquiis et nocturnis qua vi, 
+quibusve commentis id fieret, antequam effundendis rebus pertinacius 
+incumberet confidentia, acciri mollioribus scriptis per simulationem 
+tractatus publici nimis urgentis eundem placuerat Gallum, ut auxilio 
+destitutus sine ullo interiret obstaculo.
+
+Constituendi autem sunt qui sint in amicitia fines et quasi termini 
+diligendi. De quibus tres video sententias ferri, quarum nullam probo, 
+unam, ut eodem modo erga amicum adfecti simus, quo erga nosmet ipsos, 
+alteram, ut nostra in amicos benevolentia illorum erga nos benevolentiae 
+pariter aequaliterque respondeat, tertiam, ut, quanti quisque se ipse 
+facit, tanti fiat ab amicis.
+
+Quibus occurrere bene pertinax miles explicatis ordinibus parans 
+hastisque feriens scuta qui habitus iram pugnantium concitat et dolorem 
+proximos iam gestu terrebat sed eum in certamen alacriter consurgentem 
+revocavere ductores rati intempestivum anceps subire certamen cum haut 
+longe muri distarent, quorum tutela securitas poterat in solido locari 
+cunctorum.
+
