@@ -1,8 +1,8 @@
-phpNemoServer/Nemo Readme
+N2JConnector Readme
 ===================
 
-Version 0.91a 
-phpNemoServer is a set of PHP-scripts to manage JNTP Server.  
+Version 0.1  
+N2JConnector is a set of Perl-scripts to feed JNTP Server.  
 http://news.nemoweb.net/
 
 Copyright
@@ -19,42 +19,22 @@ http://www.gnu.org/licenses/agpl.txt
 Requirements
 ------------
 
-* PHP 5.2 or later
-* MongoDB 2.4 or later
-* libcurl
+* Perl (with JSON module)
+* INN
 
 Support
 -------
 
 See reference about server support forums under \<news:nemo.dev.serveur\>  
-See reference about client support forums under \<news:nemo.dev.client\>
 
 Installation
 ------
 
-In your website root directory :  
+In the INN's newsfeeds file, you need to have a channel feed:
 
-    git clone https://github.com/Julien-Arlandis/phpNemoServer.git jntp
+ 	N2JConnector!:!*:Ac,Tc,Wnm*:<pathbin>/N2JConnector.pl
 
-Go to http://yourserver/jntp/  
-Create sleep.txt file and follow the instructions.  
-Configure your feed in Applications/core/conf/description.json, do not forget to set actif=1 for active feeds.  
-Greats :)
+and a site for each of the various jntp site you're feeding,
+such as
 
-Procedure to export users to user.json file
--------
-
-    mongoexport --db <database> --collection user --out user.json
-
-Procedure to import users from user.json file
--------
-
-    mongoimport --db <database> --collection user --file user.json
-    mongo <<EOF
-    use <database>
-    db.counters.findAndModify({
-        query: {"_id":"UserID"},
-        update: {"seq":db.user.find().sort({"UserID":-1}).limit(1).next().UserID},
-        upsert: true
-    });
-    EOF
+ 	news.nemoweb.net/from-jntp:!*,local.*:Ap,Tm:N2JConnector!

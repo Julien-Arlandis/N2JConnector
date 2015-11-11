@@ -1,7 +1,5 @@
 #! /usr/bin/perl
 
-# sudo perl -MCPAN -e 'install JSON'
-
 use strict; use warnings; use LWP::UserAgent; use JSON;
 
 my $DOMAIN = 'test.domain';
