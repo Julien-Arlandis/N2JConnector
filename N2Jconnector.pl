@@ -23,9 +23,7 @@ This file is part of PhpNemoServer.
 use strict; 
 use warnings; 
 use LWP::UserAgent; 
-use JSON; 
-use utf8;
-use Data::Dumper qw(Dumper);
+use JSON;
 
 my $DOMAIN = 'testfeed.nemoweb.net';
 my $USER_AGENT	= "N2JConnector/0.1";
@@ -69,9 +67,8 @@ EOF
 	$query = decode_json($query);
 	$query->[1]{'Data'}{'Body'} = getArticle();
 	$query = encode_json($query);
+	$res = execJNTP("devnews.nemoweb.net", $query);
 }
-
-$res = execJNTP("devnews.nemoweb.net", $query);
 
 sub execJNTP {
 	my $req = HTTP::Request->new(POST => "http://".$_[0]."/jntp/");
