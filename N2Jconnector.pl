@@ -29,6 +29,22 @@ my $DOMAIN = 'testfeed.nemoweb.net';
 my $USER_AGENT	= "N2JConnector/0.1";
 my ($query, $res);
 
+sub execJNTP {
+	my $req = HTTP::Request->new(POST => "http://".$_[0]."/jntp/");
+	$req->header('content-type' => 'application/json');
+	$req->content($_[1]);
+	my $response = LWP::UserAgent->new( agent => $USER_AGENT)->request($req)->content;
+	print $response."\n";
+	return decode_json($response);
+}
+
+sub getArticle {
+	open (my $art, '<', 'article.txt') or die "unable to open file";
+	my $article = '';
+	while (<$art>) { $article .= $_; } close $art;
+	return $article;
+}
+
 $query = <<"EOF";
 [
     "diffuse",
@@ -68,21 +84,5 @@ EOF
 	$query->[1]{'Data'}{'Body'} = getArticle();
 	$query = encode_json($query);
 	$res = execJNTP("devnews.nemoweb.net", $query);
-}
-
-sub execJNTP {
-	my $req = HTTP::Request->new(POST => "http://".$_[0]."/jntp/");
-	$req->header('content-type' => 'application/json');
-	$req->content($_[1]);
-	my $response = LWP::UserAgent->new( agent => $USER_AGENT)->request($req)->content;
-	print $response."\n";
-	return decode_json($response);
-}
-
-sub getArticle {
-	open (my $art, '<', 'article.txt') or die "unable to open file";
-	my $article = '';
-	while (<$art>) { $article .= $_; } close $art;
-	return $article;
 }
 
