@@ -64,7 +64,7 @@ EOF
 
 $res = execJNTP("devnews.nemoweb.net", $query);
 
-if($res->{'code'} eq "iwant") {
+if($res->{'code'} eq "200") {
 
 	$query = <<"EOF";
 	[
